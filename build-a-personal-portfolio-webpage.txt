@@ -1,0 +1,303 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadkiel Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#welcome-section" class='nav-link'>Welcome</a></li>
+                <li><a href="#projects" class='nav-link'>Projects</a></li>
+                <li><a href="#contact" class='nav-link'>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="welcome-section">
+        <h1>Hello, I'm Zadkiel.</h1>
+        <p>A Front-End Developer</p>
+    </section>
+    <section id="projects">
+        <h1>These are some of my projects</h1>
+        <div class="projects">
+        <a href="#" class="project-tile">
+            <img src="./Tribute page.png" alt="">
+            <p><span>&lt;</span>Tribute Page<span>&gt;</span></p>
+        </a>
+        <a href="" class="project-tile">
+            <img src="./Survey Form.png" alt="">
+            <p><span>&lt;</span>Survey Form<span>&gt;</span></p>
+        </a>
+        <a href="" class="project-tile">
+            <img src="./Technical Documentation Page.png" alt="">
+            <p><span>&lt;</span><span>&gt;</span></p>
+        </a>
+        <a href="" class="project-tile">
+            <img src="./Product Landing.png" alt="">
+            <p><span>&lt;</span><span>&gt;</span></p>
+        </a>
+        <a href="" class="project-tile">
+            <img src="./skyline.png" alt="">
+            <p><span>&lt;</span><span>&gt;</span></p>
+        </a>
+        <a href="" class="project-tile">
+            <img src="./Magazine.png" alt="">
+            <p><span>&lt;</span><span>&gt;</span></p>
+        </a>
+    </div>
+    <a href="" class="show-all">Show All <i class="ri-arrow-drop-right-line ri-2x"></i>
+    </a>
+</section>
+<section id="contact">
+    <h1>Let's work together...</h1>
+<p class="coffee-question">How do you take your coffee?</p>
+<div class="social-medias">
+    <a href="https://www.facebook.com/ZaCasal/" 
+    target="_blank"
+    class="social-media" id="profie-link">
+        <i class="ri-facebook-box-fill ri-2x"></i>
+        <p>Facebook</p>
+    </a>
+    <a href="" class="social-media">
+        <i class="ri-at-line ri-2x"></i>
+        <p>Send a mail</p>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=69983910" class="social-media"
+    id='profile-link'
+    target='_blank'>
+        <i class="ri-cellphone-fill ri-2x"></i>
+        <p>Text me</p>
+    </a>
+</div>
+</section>
+<footer>Created by Zadkiel Casal 2023</footer>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root{
+    --neutral: #faeee7;
+    --base-100: #594a4e;
+    --neutral-focus: #140d0b;
+    --primary: #ff8ba7;
+    --accent: #33272a;
+    --secondary: #fff3ec;
+    }
+    
+    *{
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+    
+    body{
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      background-color: var(--neutral);
+    }
+    
+    h1, h2, h3, h4, h5, h6{
+      font-family: "Roboto", sans-serif;
+    }
+    
+    h1{
+      font-size: 60px;
+    }
+   
+    #navbar{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--neutral);
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid var(--neutral-focus);
+    }
+    
+    .nav-links{
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links a{
+      text-decoration: none;
+      padding: 0 10px;
+      color: var(--base-100);
+    }
+    
+    .nav-links a:hover{
+      text-decoration: underline;
+    }
+    
+    section{
+      min-height: 100vh;
+    padding: 70px 0;
+    }
+    
+    #welcome-section{
+      background-color: var(--neutral);
+      color: var(--base-100);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    #welcome-section h1{
+      margin-top: 30vh;
+    }
+    
+    #welcome-section p{
+      color: var(--primary);
+      font-size: 25px;
+      margin: 25px 0;
+      font-style: italic;
+    }
+
+    #projects{
+        background-color: var(--secondary);
+        color: var(--neutral);
+    }
+
+    #projects h1{
+        border-bottom: 5px solid var(--neutral);
+        width: fit-content;
+        margin: auto;
+    }
+
+    #projects .projects{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 20px;
+        place-items: center;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    #projects .project-tile{
+        height: 525px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--neutral);
+        text-decoration: none;
+        color: var(--accent);
+        border-radius: 5px;
+        box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.2);
+    }
+
+    #project .project-tile img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #projects .project-tile p {
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    #projects .project-tile span {
+        opacity: 0%;
+        padding: 0 5px;
+    }
+
+    #projects .project-tile:hover span {
+        opacity: 100%;
+        color: (var--primary);
+        transition: opacity 0.25 ease-in;
+    }
+
+    .show-all {
+        text-decoration: none;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 0px 15px;
+        background-color: var(--neutral);
+        color: var(--accent);
+        font-size: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in;
+        transition: color 0.2s ease-in;
+    }
+
+    .show-all:hover { 
+        background-color: var(--neutral-focus);
+        color: var(--base-100);
+    }
+
+    #contact {
+        background-color: var(--neutral);
+        color: var(--base-100);
+    }
+
+    #contact h1 {
+        margin-top: 300px;
+    }
+
+    #contact .coffee-question {
+        color: var(--primary);
+        font-size: 25px;
+        font-style: italic;
+    }
+
+    #contact .social-medias {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 30px
+    }
+
+    #contact .social-media {
+        text-decoration: none;
+        color: var(--base-100);
+        transition: transform 0.2s ease-in;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        font-size: 22px;
+    }
+
+    #contact .social-media:hover {
+        transform: translateY(10px);
+    }
+
+    footer {
+        border-top: 3px solid var(--primary);
+        color: var(--base-100);
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    @media only screen and(width < 700px){
+        h1{
+            font-size: 50px;
+        }
+    #projects .project-tile{
+        height: 600px;
+        width: 100%;
+        }
+    }
+
+** end of undefined **
+
